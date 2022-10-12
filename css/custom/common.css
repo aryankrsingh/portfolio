@@ -1,0 +1,148 @@
+        /* ================================================ Common CSS Start ================================================ */
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: var(--tab_color);
+}
+html {
+    scroll-behavior: smooth;
+    position: var(--position_relative);
+}
+img, .img-fluid {
+    pointer-events: none;
+    user-select: var(--all_none);
+}
+a {
+    display: var(--display_in_block);
+    transition: var(--transition_5s);
+}
+a, a:hover {
+    color: var(--inherit_color);
+    text-decoration: var(--all_none);
+}
+ol, ul, dl {
+    list-style: var(--all_none);
+    padding: calc(var(--space_5px) - 5);
+    margin: calc(var(--space_5px) - 5);
+}
+input:focus, input.form-control:focus, textarea:focus, textarea.form-control:focus, select:focus, select.form-control:focus, button:focus, .btn:focus {
+    box-shadow: var(--all_none);
+    outline: calc(var(--space_5px) * 0);
+    border-color: #ced4da;
+}
+.common_section {
+    position: var(--position_relative);
+    padding: calc(var(--space_5px) * 12) calc(var(--space_5px) - 5px);
+    overflow: var(--over_hide);
+    z-index: 1;
+}
+.common_section > div:last-child {
+    position: var(--position_relative);
+    z-index: 2;
+}
+.common_shape_line {
+    position: var(--position_absolute);
+    z-index: -1;
+}
+.common_title_box {
+    margin-bottom: calc(var(--space_5px) * 14);
+}
+.common_title {
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) * 14) var(--title_font_family);
+    position: var(--position_relative);
+}
+.common_sub_title {
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) * 13) var(--sub_title_font_family);
+    position: var(--position_relative);
+    color: var(--main_color);
+    z-index: 1;
+}
+.common_center, .common_center_title h2 {
+    text-align: var(--display_center);
+}
+.common_sub_title::before {
+    content: attr(data-name);
+    position: var(--position_absolute);
+    opacity: 0.3;
+    z-index: -1;
+    text-transform: uppercase;
+    font: calc(var(--font_weight) * 7) calc(var(--font_size) * 22) var(--sub_title_font_family);
+    letter-spacing: var(--space_5px);
+    color: var(--second_color);
+    -webkit-text-fill-color: var(--transparent_color);
+    -webkit-text-stroke: calc(var(--space_5px) - 2px) var(--second_color);
+    z-index: -1;
+    left: calc(var(--space_1_full) * 50);
+    top: calc(var(--space_1_full) * 50);
+    transform: translate(calc(var(--space_1_full) * -50),calc(var(--space_1_full) * -50));
+}
+.common_para {
+    position: var(--position_relative);
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) * 4) / calc(var(--space_5px) * 5) var(--para_font_family);
+}
+.common_btn_box {
+    margin-top: calc(var(--space_5px) * 5);
+}
+.common_btn, .common_btn_box button, .common_btn_box a {
+    position: var(--position_relative);
+    transition: var(--transition_5s);
+    overflow: var(--over_hide);
+    background: var(--transparent_color);
+    color: var(--black_color);
+    border-radius: calc(var(--radius_5px) + 40px);
+    border: calc(var(--space_5px) - 3px) solid var(--main_color);
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) * 4) var(--link_font_family);
+    padding: calc(var(--space_5px) * 2) calc(var(--space_5px) * 13) calc(var(--space_5px) * 2) calc(var(--space_5px) * 6.5);
+    z-index: 1;
+}
+.common_btn:hover, .common_btn:focus, .common_btn_box button:hover, .common_btn_box a:hover, .common_btn_box button:focus, .common_btn_box a:focus {
+    border: calc(var(--space_5px) - 3px) solid var(--main_color);
+    color: var(--white_color);
+}
+.common_icon, .common_btn_box button span:last-child, .common_btn_box a span:last-child {
+    position: var(--position_absolute);
+    display: var(--display_in_flex);
+    align-items: var(--display_center);
+    justify-content: var(--display_center);
+    width: calc(var(--space_5px) * 9.5);
+    height: calc(var(--space_5px) * 9.5);
+    border-radius: var(--radius_full);
+    top: calc(var(--space_5px) - 6px);
+    right: calc(var(--space_5px) - 6px);
+    font-size: calc(var(--font_size) * 4);
+    background: var(--main_color);
+    color: var(--white_color);
+    transition: var(--transition_5s);
+    z-index: 1;
+}
+.common_btn::before, .common_btn_box button::before, .common_btn_box a::before {
+    content: '';
+    position: var(--position_absolute);
+    transition: var(--transition_5s);
+    background: var(--main_color);
+    width: calc(var(--space_1_full) * 110);
+    height: calc(var(--space_1_full) * 110);
+    top: calc(var(--space_5px) - 8px);
+    right: calc(var(--space_5px) - 8px);
+    left: calc(var(--space_5px) - 8px);
+    bottom: calc(var(--space_5px) - 8px);
+    z-index: -1;
+    border-radius: calc(var(--radius_5px) * 10);
+    transform: translateX(100%);
+}
+.common_btn:hover::before, .common_btn:focus::before, .common_btn_box button:hover::before, .common_btn_box a:hover::before, .common_btn_box button:focus::before, .common_btn_box a:focus::before {
+    transform: translateX(0%);
+}
+.img_loading_main {
+    position: var(--position_relative);
+}
+.img_loading {
+    background: #777;
+    position: var(--position_absolute);
+    width: calc(var(--space_1_full) * 100);
+    height: calc(var(--space_1_full) * 100);
+    border-radius: var(--radius_5px);
+    opacity: calc(var(--opacity_1) - 1);
+    z-index: 1111;
+}
+        /* ================================================ Common CSS End ================================================ */

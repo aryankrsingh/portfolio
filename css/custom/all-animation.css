@@ -1,0 +1,84 @@
+        /* ================================================ Common Top to Bottom ================================================ */
+.common_top {
+    /* animation-name: slide_down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+    animation: slide_down 2s ease-in-out infinite;
+    transition: var(--transition_5s);
+}
+@keyframes slide_down {
+    0%, 100% {
+        transform: translate(0px, -3px)
+    }
+    50% {
+        transform: translate(0px, 3px);
+    }
+}
+
+        /* ================================================ Common Right to Left ================================================ */
+
+.common_right {
+    animation: slide_right 2s ease-in-out infinite;
+}
+@keyframes slide_right {
+    0%, 100% {
+        transform: translate(-3px, 0px)
+    }
+    50% {
+        transform: translate(3px, 0px);
+    }
+}
+
+        /* ================================================ Banner User Img Wave ================================================ */
+
+.wave#wave1 {
+    z-index: 1;
+    opacity: 1;
+    animation: animateWaves 4s linear infinite;
+}
+.wave#wave2 {
+    z-index: 2;
+    opacity: 0.5;
+    animation: animate 4s linear infinite !important;
+}
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    animation: animateWaves 3s linear infinite;
+}
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    animation: animate 3s linear infinite;
+}
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-positon-x: 0px;
+    }
+}
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+        /* ================================================ Banner User Code Icon ================================================ */
+
+.cbci_main_box {
+    animation: floating 2s linear infinite;
+}
+@keyframes floating {
+    0%, 100% {
+        transform: translate(0px, -3px) translate(-3px, 0px);
+    }
+    50% {
+        transform: translate(3px, 0px) translate(0px, -3px);
+    }
+}

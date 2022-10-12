@@ -1,0 +1,31 @@
+.btt_main {
+    position: fixed;
+    z-index: 999999;
+    bottom: 30px;
+    right: 0px;
+}
+.btt_box {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333132;
+    color: #fff;
+    transform: translateX(110px);
+}
+.btt_box:hover {
+    color: #fff;
+    transform: translateX(0px);
+}
+.btt_icon {
+    width: 45px;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #530D15;
+    font-size: 22px;
+}
+.btt_text {
+    padding: 13px;
+}

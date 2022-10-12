@@ -1,0 +1,72 @@
+html {
+    transition: var(--transition_5s);
+}
+:root.dark {
+    --dark_mode_bg: #111;
+}
+
+        /* ================================================ header CSS Start ================================================ */
+
+.dark .header_fixed {
+    background: var(--black_color);
+    background-color: var(--dark_mode_bg);
+    box-shadow: 0px 0px 10px -5px rgb(255,255,255,0.5);
+}
+.dark .navbar-nav .nav-item > .nav-link {
+    color: var(--white_color);
+}
+.dark .header_fixed .navbar-nav .nav-item > .nav-link.active, .dark .header_fixed .navbar-nav .nav-item > .nav-link:hover, .dark .header_fixed .navbar-nav .nav-item > .nav-link:focus, .dark .header_fixed .navbar-light .navbar-nav .nav-item > .nav-link.show {
+    color: var(--main_color);
+}
+.dark .mode_box {
+    color: var(--white_color);
+}
+.dark .navbar-light .navbar-text.rd_btn, .dark .common_btn, .dark .common_btn_box button, .dark .common_btn_box a {
+    color: var(--white_color);
+}
+
+        /* ================================================ header CSS End ================================================ */
+
+        /* ================================================ Common CSS Start ================================================ */
+
+.dark .common_sub_title::before {
+    color: var(--second_color);
+    color: var(--white_color);
+    -webkit-text-fill-color: var(--transparent_color);
+    -webkit-text-stroke: calc(var(--space_5px) - 2px) var(--white_color);
+}
+
+        /* ================================================ Common CSS End ================================================ */
+
+        /* ================================================ Banner CSS Start ================================================ */
+
+.dark .home_banner_section, .dark .common_section {
+    background-color: var(--black_color);
+    background-color: var(--dark_mode_bg);
+}
+.dark .banner_user_name, .dark .banner_user_text_box h1, .dark .banner_user_designation, .dark .banner_user_text_box h2, .dark .banner_user_para, .dark .banner_user_text_box p {
+    color: var(--white_color);
+}
+.dark .wave {
+    background-image: url("../../media/images/banner/wave-dark.png");
+}
+.dark .pro_count_box {
+    background: var(--dark_mode_bg);
+}
+.dark .per_title, .dark .personal_dtl_box h3, .dark .pro_count_title, .dark .count_cont_box h6, .dark .personal_dtl_list, .dark .per_social_list li a {
+    color: var(--white_color);
+}
+
+        /* ================================================ Banner CSS End ================================================ */
+
+        /* ================================================ Skill CSS Start ================================================ */
+
+.dark .skill_box {
+    --skill_color: var(--main_color);
+}
+.dark .skill_box .skill_progress text, .dark .skill_title, .dark  .skill_box h4 {
+    fill: var(--white_color);
+    color: var(--white_color);
+}
+
+        /* ================================================ Skill CSS End ================================================ */

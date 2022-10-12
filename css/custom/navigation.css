@@ -1,0 +1,117 @@
+        /* ================================================ Menu CSS Start ================================================ */
+
+.nav_sticky .navbar {
+    padding: calc(var(--space_5px) * 3) calc(var(--space_5px) - 5px);
+}
+.navbar-light .navbar-brand.logo_brand {
+    font-family: var(--logo_font_family);
+    color: var(--main_color);
+    font-size: calc(var(--font_size) * 6);
+}
+.navbar-nav .nav-item > .nav-link {
+    position: var(--position_relative);
+    color: var(--black_color);
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) * 4) var(--link_font_family);
+    transition: var(--transition_5s);
+    margin: calc(var(--space_5px) * 0) calc(var(--space_5px) * 2);
+    padding: calc(var(--space_5px) * 1.6) calc(var(--space_5px) * 2);
+}
+.navbar-nav .nav-item > .nav-link::before {
+    content: '';
+    position: var(--position_absolute);
+    width: var(--space_0_full);
+    height: calc(var(--space_5px) - 3px);
+    left: var(--space_auto);
+    right: calc(var(--space_5px) - 5px);
+    bottom: calc(var(--space_5px) - 5px);
+    background: var(--black_color);
+    transition: var(--transition_5s);
+}
+.navbar-nav .nav-item > .nav-link:hover, .navbar-nav .nav-item > .nav-link.active, .navbar-light .navbar-nav .nav-item > .nav-link.show {
+    color: var(--main_color);
+}
+.navbar-nav .nav-item > .nav-link:hover::before, .navbar-nav .nav-item > .nav-link.active::before, .navbar-light .navbar-nav .nav-item > .nav-link.show::before {
+    width: calc(var(--space_1_full) * 100);
+    left: calc(var(--space_5px) - 5px);
+    right: var(--space_auto);
+    background: var(--main_color);
+}
+.navbar-light .navbar-nav .nav-item:first-child > .nav-link {
+    margin-left: calc(var(--space_5px) - 5px);
+}
+.navbar-light .navbar-nav .nav-item:last-child > .nav-link {
+    margin-right: calc(var(--space_5px) - 5px);
+}
+.dropdown-menu[data-bs-popper], .dropdown-menu {
+    margin-top: calc(var(--space_5px) + 3px);
+}
+.dropdown-menu {
+    box-shadow: 0px 0px calc(var(--space_5px) * 2) calc(var(--space_5px) - 7px) var(--main_color);
+    border: var(--all_none);
+    border-radius: calc(var(--radius_5px) - 5px);
+    padding: calc(var(--space_5px) - 5px);
+}
+.dropdown-menu .dropdown-item {
+    padding: calc(var(--space_5px) - 5px);
+}
+.dropdown-menu .dropdown-item:hover {
+    background: var(--transparent_color);
+}
+.dropdown-menu .dropdown-item .nav-link {
+    color: var(--black_color);
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) + 10px) var(--link_font_family);
+    padding: calc(var(--space_5px) * 2);
+    transition: var(--transition_5s);
+    border-bottom: calc(var(--space_5px) - 4px) solid rgba(72, 88, 77, 0.1);
+}
+.dropdown-menu .dropdown-item:last-child .nav-link  {
+    border-bottom: var(--all_none);
+}
+.dropdown-menu .dropdown-item .nav-link:hover, .dropdown-menu .dropdown-item .nav-link.active {
+    color: var(--white_color);
+    background: var(--main_color);
+}
+.navbar-light .navbar-text.rd_btn {
+    color: var(--black_color);
+}
+.navbar-light .navbar-text.rd_btn:hover, .navbar-light .navbar-text.rd_btn:focus {
+    color: var(--white_color);
+}
+.rd_hover, .rd_normal {
+    transition: var(--transition_5s);
+}
+.mode_box {
+    margin-right: calc(var(--space_5px) * 4);
+}
+.mode_switch {
+    display: var(--display_in_block);
+}
+.mode_switch #mode, .mode_switch input[type='checkbox'] {
+    position: var(--position_absolute);
+    opacity: calc(var(--space_5px) - 5px);
+    width: calc(var(--space_5px) - 5px);
+    height: calc(var(--space_5px) - 5px);
+}
+.mode_slider {
+    display: var(--display_in_flex);
+    align-items: var(--display_center);
+    justify-content: var(--display_center);
+    width: calc(var(--space_5px) * 8);
+    height: calc(var(--space_5px) * 8);
+    cursor: pointer;
+    border: calc(var(--space_5px) - 3px) solid var(--main_color);
+    transition: var(--transition_5s);
+    border-radius: var(--radius_full);
+    overflow: var(--over_hide);
+}
+.mode_slider::before {
+    content: '\f185' /* Light */;
+    font-family: var(--font_family_awesome);
+    display: var(--display_in_block);
+}
+.mode_switch #mode:checked + .mode_slider::before, .mode_switch input[type='checkbox']:checked + .mode_slider::before {
+    content: '\f186' /* Dark */;
+}
+
+        /* ================================================ Menu CSS End ================================================ */
+        

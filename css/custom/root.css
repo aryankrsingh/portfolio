@@ -1,0 +1,62 @@
+:root, :root.light {
+    --font_family_awesome: 'font awesome';
+    --logo_font_family: 'Splash', 'cursive';
+    --sign_font_family: 'The Nautigal', 'cursive';
+    --link_font_family: 'Poppins', sans-serif;
+    --title_font_family: 'Fredericka the Great', 'cursive';
+    --sub_title_font_family: 'Oswald', sans-serif;
+    --para_font_family: 'Exo 2', sans-serif;
+
+    --font_weight: 100;
+    --font_size: 4px;
+
+    --display_in_block: inline-block;
+    --display_block: block;
+    --display_flex: flex;
+    --display_in_flex: inline-flex;
+    --display_center: center;
+    --display_flex_end: flex-end;
+    --display_end: end;
+
+    --opacity_1: 1;
+    --space_1_full: 1%;
+    --space_0_full: 0%;
+    --space_5px: 5px;
+    --space_auto: auto;
+    --radius_5px: 5px;
+    --radius_full: 50%;
+
+    --transition_5s: all ease-in-out 0.5s;
+    --over_hide: hidden;
+    --over_visible: visible;
+    --all_none: none;
+
+    --position_static: static;
+    --position_relative: relative;
+    --position_absolute: absolute;
+    --position_fixed: fixed;
+    --position_sticky: sticky;
+
+    --transparent_color: transparent;
+    --inherit_color: inherit;
+    --initial_color: initial;
+
+    --white_color: #fff;
+    --black_color: #000;
+    --text_color: #202020;
+    --bg_main_color: #f7f7f7;
+    --bg_second_color: #f1f1f1;
+    --main_color: #FF9933;
+    --second_color: #138808;
+    --third_color: #000080;
+    --tab_color: rgba(241, 241, 241, 0.6);
+}
+:root.dark {
+    --white_color: #fff;
+    --black_color: #000;
+    --bg_main_color: #f7f7f7;
+    --bg_second_color: #f1f1f1;
+    --main_color: #FF9933;
+    --second_color: #138808;
+    --third_color: #000080;
+}

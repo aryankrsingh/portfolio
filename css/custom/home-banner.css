@@ -1,0 +1,141 @@
+.home_banner_section {
+    background: var(--white_color);
+    padding: calc(var(--space_5px) * 36) calc(var(--space_5px) - 5px) calc(var(--space_5px) * 18) calc(var(--space_5px) - 5px);
+}
+.banner_shape_1 {
+    top: calc(var(--space_5px) - 5px);
+    left: calc(var(--space_5px) - 5px);
+}
+.banner_shape_2 {
+    bottom: calc(var(--space_5px) - 5px);
+    right: calc(var(--space_5px) - 5px);
+}
+.banner_shape_3 {
+    top: calc(var(--space_5px) - 5px);
+    right: calc(var(--space_5px) - 5px);
+}
+.banner_shape_1 svg {
+    fill: var(--main_color);
+}
+.banner_shape_2 svg {
+    fill: var(--second_color);
+}
+.banner_shape_3 svg {
+    fill: var(--third_color);
+}
+.banner_line img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner_line_1 {
+    top: calc(var(--space_5px) - 5px);
+    left: calc(var(--space_5px) - 5px);
+}
+.banner_line_2 {
+    bottom: calc(var(--space_5px) - 5px);
+    right: calc(var(--space_5px) - 5px);
+}
+.banner_line_3 {
+    top: calc(var(--space_5px) - 5px);
+    right: calc(var(--space_5px) - 5px);
+    width: calc(var(--space_1_full) * 45);
+}
+.banner_user_name, .banner_user_text_box h1 {
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) * 14) var(--title_font_family);
+    margin-bottom: calc(var(--space_5px) - 5px);
+}
+.banner_user_name .banner_user_hello, .banner_user_text_box h1 span {
+    display: var(--display_block);
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) * 10) var(--sub_title_font_family);
+}
+.banner_user_designation, .banner_user_text_box h2 {
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) * 8) var(--sub_title_font_family);
+    margin-bottom: calc(var(--space_5px) * 3);
+    margin-top: calc(var(--space_5px) * 3);
+}
+.banner_user_para, .banner_user_text_box p {
+    font: calc(var(--font_weight) * 5) calc(var(--font_size) * 4) / calc(var(--space_5px) * 5) var(--para_font_family);
+    margin-bottom: calc(var(--space_5px) - 5px);
+    color: var(--black_color);
+}
+.user_img_box {
+    position: var(--position_relative);
+}
+.user_img, .user_img_box figure {
+    display: var(--display_flex);
+    justify-content: var(--display_center);
+    align-items: var(--display_flex_end);
+    overflow: var(--over_hide);
+    background: var(--second_color);
+    background: var(--bg_main_color);
+    width: calc(var(--space_5px) * 100);
+    height: calc(var(--space_5px) * 100);
+    margin: calc(var(--space_5px) - 5px) var(--space_auto);
+    border-radius: calc(var(--radius_5px) * 10) calc(var(--radius_5px) * 15)  calc(var(--radius_5px) * 20)calc(var(--radius_5px) * 25);
+    border-radius: var(--radius_full);
+}
+.user_img img, .user_img_box figure img {
+    width: calc(var(--space_1_full) * 90);
+    height: calc(var(--space_1_full) * 90);
+    object-fit: contain;
+    object-position: bottom;
+    z-index: 99;
+}
+.wave {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("../../media/images/banner/wave.png");
+    background-size: 1000px 100px;
+    z-index: 1;
+}
+.cbci_main_box {
+    position: var(--position_absolute);
+    width: calc(var(--space_1_full) * 100);
+    height: calc(var(--space_1_full) * 100);
+    top: calc(var(--space_5px) - 5px);
+    bottom: calc(var(--space_5px) - 5px);
+    right: calc(var(--space_5px) - 5px);
+    left: calc(var(--space_5px) - 5px);
+    z-index: 1111;
+}
+.cbci_box {
+    position: var(--position_fixed);
+    background: var(--white_color);
+    display: var(--display_flex);
+    align-items: var(--display_center);
+    justify-content: var(--display_center);
+    width: calc(var(--space_5px) * 20);
+    height: calc(var(--space_5px) * 20);
+    font-size: calc(var(--font_size) * 15);
+    border-radius: calc(var(--radius_5px) * 4);
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.5);
+    z-index: 1111;
+}
+.bci_hmtl {
+    color: #e44d26;
+}
+.bci_css {
+    color: #214ce5;
+}
+.bci_bootstrap {
+    color: #7211f5;
+}
+.bci_js {
+    color: #f5de19;
+}
+.bci_hmtl, .bci_css {
+    top: calc(var(--space_5px) * 6);
+}
+.bci_css, .bci_js {
+    right: calc(var(--space_5px) * 10);
+}
+.bci_bootstrap, .bci_js {
+    bottom: calc(var(--space_5px) * 6);
+}
+.bci_hmtl, .bci_bootstrap {
+    left: calc(var(--space_5px) * 10);
+}

@@ -1,0 +1,68 @@
+/* #canvas {
+    background: rgba(250, 250, 250, 1) ;
+    margin: 30px 20vw;
+    box-shadow: 0 0 15px 2px #2bf;
+    border-radius: 5px;
+} */
+/* .home_skill_section {
+    background: var(--bg_main_color);
+    background: var(--bg_second_color);
+} */
+.skill_shape_1 {
+    right: -10%;
+    bottom: -70%;
+}
+.skill_shape_1 svg {
+    fill: var(--second_color);
+}
+.skill_line_1 {
+    bottom: calc(var(--space_5px) - 5px);
+    right: calc(var(--space_5px) - 5px);
+}
+.skill_main_box {
+    display: var(--display_flex);
+    align-items: var(--display_center);
+    flex-wrap: wrap;
+}
+.skill_box {
+    width: calc(var(--space_1_full) * 16.666);
+    text-align: var(--display_center);
+    margin-bottom: calc(var(--space_5px) * 8);
+    --skill_color: var(--third_color);
+}
+.skill_title, .skill_box h4 {
+    font: calc(var(--font_weight) * 6) calc(var(--font_size) * 5) var(--sub_title_font_family);
+    margin-bottom: calc(var(--space_5px) - 5px);
+    margin-top: calc(var(--space_5px) * 2);
+    color: var(--skill_color);
+}
+.skill_progress {
+    height: auto;
+    max-width: calc(var(--space_5px) * 40);
+    max-width: calc(var(--space_5px) * 32);
+    max-width: calc(var(--space_5px) * 25);
+    width: calc(var(--space_1_full) * 100);
+    transform: rotate(-90deg);
+}
+.skill_progress circle.incomplete {
+    opacity: calc(var(--opacity_1) - 0.80);
+}
+.skill_progress circle {
+    fill: var(--transparent_color);
+    stroke-dashoffset: 219.91148575129;
+    stroke-dashoffset: 220;
+    stroke-width: calc(var(--space_5px) - 1px);
+}
+.skill_progress circle.complete {
+    stroke-dasharray: 219.91148575129;
+    stroke-dasharray: 220;
+}
+.skill_progress text {
+    fill: var(--skill_color);
+    font: calc(var(--font_weight) * 4) calc(var(--font_size) * 4) var(--sub_title_font_family);
+    text-anchor: middle;
+}
+
+.skill_box .skill_progress circle {
+    stroke: var(--skill_color);
+}

@@ -1,0 +1,29 @@
+        /* ================================================ Header CSS Start ================================================ */
+
+.nav_sticky {
+    position: var(--position_fixed);
+    top: calc(var(--space_5px) - 5px);
+    left: calc(var(--space_5px) - 5px);
+    width: calc(var(--space_1_full) * 100);
+    z-index: 9999;
+    background: var(--transparent_color);
+    transition: var(--transition_5s);
+}
+.header_fixed {
+    background: var(--white_color);
+    animation-name: header_sticky;
+    animation-duration: .4s;
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.5);
+}
+@keyframes header_sticky {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px) 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        /* ================================================ Header CSS End ================================================ */
